@@ -11,7 +11,7 @@ int main (int argc, char **argv) {
     }
 
     g_signal_connect (crackerApp, "activate", G_CALLBACK (ActivateApplication), NULL);
-    int status = g_application_run (G_APPLICATION (crackerApp), argc, argv);
+    g_application_run (G_APPLICATION (crackerApp), argc, argv);
     g_object_unref (crackerApp);
     DestroyAllWidgets ();
 

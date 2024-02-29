@@ -13,7 +13,8 @@ static GtkImage       *Image       = NULL;
 static GtkWidget      *Window      = NULL;
 
 static const size_t     IMAGES_COUNT                = 6;
-static const char      *ImagesNames  [IMAGES_COUNT] = {"../img/1.jpg", "../img/2.jpg", "../img/3.jpg", "../img/4.jpg", "../img/5.jpg", "../img/6.jpg"};
+static const char      *ImagesNames  [IMAGES_COUNT] = 
+                        {"../img/1.jpg", "../img/2.jpg", "../img/3.jpg", "../img/4.jpg", "../img/5.jpg", "../img/6.jpg"};
 static GdkPixbuf *ImageBuffers [IMAGES_COUNT] = {NULL, NULL, NULL, NULL, NULL, NULL};
 
 static const double PROGRESS_BAR_STEP      = 0.005;
@@ -26,29 +27,6 @@ void ActivateApplication (GtkApplication *crackerApp, gpointer userData) {
     assert (crackerApp);
     CreateWindow (crackerApp, "../ui/MainWindow.ui");
 }
-
-static void SignalEnd (GObject *object)
-{
-    g_object_unref (object);
-}
-
-static void PlaySound ()
-{
-  char *path;
-  GtkMediaStream *stream;
-
-  path = g_build_filename ("tests", name, NULL);
-
-  stream = gtk_media_file_new_for_filename (path);
-  gtk_media_stream_set_volume (stream, 1.0);
-
-  gtk_media_stream_play (stream);
-
-  g_signal_connect (stream, "notify::ended", G_CALLBACK (ended), NULL);
-
-  g_free (path);
-}
-
 
 static void SetComFile (GtkFileChooser *fileChooser, gpointer userData) {
     assert (fileChooser);
@@ -101,7 +79,6 @@ static void BeginCrack (GtkButton *button, gpointer userData) {
     PatchFile ();
 
     progressBarThread = g_timeout_add (25, UpdateProgress, NULL);
-    fprintf (stderr, "timer set\n");
 }
 
 static GtkWidget *GetUiObject (GtkBuilder *builder, const char *objectId) {

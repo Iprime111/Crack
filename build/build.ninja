@@ -12,7 +12,7 @@
 
 # =============================================================================
 # Project: crack
-# Configurations: Debug
+# Configurations: Release
 # =============================================================================
 
 #############################################
@@ -24,7 +24,7 @@ ninja_required_version = 1.5
 #############################################
 # Set configuration variable for custom commands.
 
-CONFIGURATION = Debug
+CONFIGURATION = Release
 # =============================================================================
 # Include auxiliary files.
 
@@ -49,23 +49,23 @@ cmake_ninja_workdir = /home/ip111/Code/crackme/crack/build/
 
 build cmake_object_order_depends_target_crack: phony || CMakeFiles/crack.dir
 
-build CMakeFiles/crack.dir/main.cpp.o: CXX_COMPILER__crack_unscanned_Debug /home/ip111/Code/crackme/crack/main.cpp || cmake_object_order_depends_target_crack
+build CMakeFiles/crack.dir/main.cpp.o: CXX_COMPILER__crack_unscanned_Release /home/ip111/Code/crackme/crack/main.cpp || cmake_object_order_depends_target_crack
   DEP_FILE = CMakeFiles/crack.dir/main.cpp.o.d
-  FLAGS = -g -ggdb3 -O0 -Wall -Wextra -Weffc++ -Waggressive-loop-optimizations -Wc++14-compat -Wmissing-declarations -Wcast-align -Wcast-qual -Wchar-subscripts -Wconditionally-supported -Wconversion -Wctor-dtor-privacy -Wempty-body -Wfloat-equal -Wno-format-nonliteral -Wformat-security -Wformat-signedness -Wformat=2 -Winline -Wlogical-op -Wnon-virtual-dtor -Wopenmp-simd -Woverloaded-virtual -Wpacked -Wpointer-arith -Winit-self -Wredundant-decls -Wshadow -Wsign-conversion -Wsign-promo -Wstrict-null-sentinel -Wstrict-overflow=2 -Wsuggest-attribute=noreturn -Wsuggest-final-methods -Wsuggest-final-types -Wsuggest-override -Wno-switch-enum -Wsync-nand -Wundef -Wunreachable-code -Wunused -Wuseless-cast -Wvariadic-macros -Wno-literal-suffix -Wno-missing-field-initializers -Wno-narrowing -Wno-old-style-cast -Wno-varargs -Wno-unused-parameter -Wstack-protector -fcheck-new -fsized-deallocation -fstack-protector -fstrict-overflow -fPIC -fno-omit-frame-pointer -pie -fPIE -Werror=vla -Wno-write-strings -fsanitize=address,bool,bounds,enum,float-cast-overflow,float-divide-by-zero,integer-divide-by-zero,leak,nonnull-attribute,null,object-size,return,returns-nonnull-attribute,shift,signed-integer-overflow,undefined,unreachable,vla-bound,vptr
+  FLAGS = -O3 -DNDEBUG -O3 -Wconversion -Wno-narrowing -std=c++17 -DNDEBUG
   INCLUDES = -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/atk-1.0 -I/usr/include/freetype2 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/cloudproviders -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/fribidi -I/usr/include/pixman-1 -I/usr/include/libpng16 -I/usr/include/gio-unix-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/sysprof-6 -I/home/ip111/Code/crackme/crack/include
   OBJECT_DIR = CMakeFiles/crack.dir
   OBJECT_FILE_DIR = CMakeFiles/crack.dir
 
-build CMakeFiles/crack.dir/src/WindowDrawer.cpp.o: CXX_COMPILER__crack_unscanned_Debug /home/ip111/Code/crackme/crack/src/WindowDrawer.cpp || cmake_object_order_depends_target_crack
+build CMakeFiles/crack.dir/src/WindowDrawer.cpp.o: CXX_COMPILER__crack_unscanned_Release /home/ip111/Code/crackme/crack/src/WindowDrawer.cpp || cmake_object_order_depends_target_crack
   DEP_FILE = CMakeFiles/crack.dir/src/WindowDrawer.cpp.o.d
-  FLAGS = -g -ggdb3 -O0 -Wall -Wextra -Weffc++ -Waggressive-loop-optimizations -Wc++14-compat -Wmissing-declarations -Wcast-align -Wcast-qual -Wchar-subscripts -Wconditionally-supported -Wconversion -Wctor-dtor-privacy -Wempty-body -Wfloat-equal -Wno-format-nonliteral -Wformat-security -Wformat-signedness -Wformat=2 -Winline -Wlogical-op -Wnon-virtual-dtor -Wopenmp-simd -Woverloaded-virtual -Wpacked -Wpointer-arith -Winit-self -Wredundant-decls -Wshadow -Wsign-conversion -Wsign-promo -Wstrict-null-sentinel -Wstrict-overflow=2 -Wsuggest-attribute=noreturn -Wsuggest-final-methods -Wsuggest-final-types -Wsuggest-override -Wno-switch-enum -Wsync-nand -Wundef -Wunreachable-code -Wunused -Wuseless-cast -Wvariadic-macros -Wno-literal-suffix -Wno-missing-field-initializers -Wno-narrowing -Wno-old-style-cast -Wno-varargs -Wno-unused-parameter -Wstack-protector -fcheck-new -fsized-deallocation -fstack-protector -fstrict-overflow -fPIC -fno-omit-frame-pointer -pie -fPIE -Werror=vla -Wno-write-strings -fsanitize=address,bool,bounds,enum,float-cast-overflow,float-divide-by-zero,integer-divide-by-zero,leak,nonnull-attribute,null,object-size,return,returns-nonnull-attribute,shift,signed-integer-overflow,undefined,unreachable,vla-bound,vptr
+  FLAGS = -O3 -DNDEBUG -O3 -Wconversion -Wno-narrowing -std=c++17 -DNDEBUG
   INCLUDES = -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/atk-1.0 -I/usr/include/freetype2 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/cloudproviders -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/fribidi -I/usr/include/pixman-1 -I/usr/include/libpng16 -I/usr/include/gio-unix-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/sysprof-6 -I/home/ip111/Code/crackme/crack/include
   OBJECT_DIR = CMakeFiles/crack.dir
   OBJECT_FILE_DIR = CMakeFiles/crack.dir/src
 
-build CMakeFiles/crack.dir/src/FilePatcher.cpp.o: CXX_COMPILER__crack_unscanned_Debug /home/ip111/Code/crackme/crack/src/FilePatcher.cpp || cmake_object_order_depends_target_crack
+build CMakeFiles/crack.dir/src/FilePatcher.cpp.o: CXX_COMPILER__crack_unscanned_Release /home/ip111/Code/crackme/crack/src/FilePatcher.cpp || cmake_object_order_depends_target_crack
   DEP_FILE = CMakeFiles/crack.dir/src/FilePatcher.cpp.o.d
-  FLAGS = -g -ggdb3 -O0 -Wall -Wextra -Weffc++ -Waggressive-loop-optimizations -Wc++14-compat -Wmissing-declarations -Wcast-align -Wcast-qual -Wchar-subscripts -Wconditionally-supported -Wconversion -Wctor-dtor-privacy -Wempty-body -Wfloat-equal -Wno-format-nonliteral -Wformat-security -Wformat-signedness -Wformat=2 -Winline -Wlogical-op -Wnon-virtual-dtor -Wopenmp-simd -Woverloaded-virtual -Wpacked -Wpointer-arith -Winit-self -Wredundant-decls -Wshadow -Wsign-conversion -Wsign-promo -Wstrict-null-sentinel -Wstrict-overflow=2 -Wsuggest-attribute=noreturn -Wsuggest-final-methods -Wsuggest-final-types -Wsuggest-override -Wno-switch-enum -Wsync-nand -Wundef -Wunreachable-code -Wunused -Wuseless-cast -Wvariadic-macros -Wno-literal-suffix -Wno-missing-field-initializers -Wno-narrowing -Wno-old-style-cast -Wno-varargs -Wno-unused-parameter -Wstack-protector -fcheck-new -fsized-deallocation -fstack-protector -fstrict-overflow -fPIC -fno-omit-frame-pointer -pie -fPIE -Werror=vla -Wno-write-strings -fsanitize=address,bool,bounds,enum,float-cast-overflow,float-divide-by-zero,integer-divide-by-zero,leak,nonnull-attribute,null,object-size,return,returns-nonnull-attribute,shift,signed-integer-overflow,undefined,unreachable,vla-bound,vptr
+  FLAGS = -O3 -DNDEBUG -O3 -Wconversion -Wno-narrowing -std=c++17 -DNDEBUG
   INCLUDES = -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/atk-1.0 -I/usr/include/freetype2 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/cloudproviders -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/fribidi -I/usr/include/pixman-1 -I/usr/include/libpng16 -I/usr/include/gio-unix-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/sysprof-6 -I/home/ip111/Code/crackme/crack/include
   OBJECT_DIR = CMakeFiles/crack.dir
   OBJECT_FILE_DIR = CMakeFiles/crack.dir/src
@@ -78,9 +78,9 @@ build CMakeFiles/crack.dir/src/FilePatcher.cpp.o: CXX_COMPILER__crack_unscanned_
 #############################################
 # Link the executable bin/crack
 
-build bin/crack: CXX_EXECUTABLE_LINKER__crack_Debug CMakeFiles/crack.dir/main.cpp.o CMakeFiles/crack.dir/src/WindowDrawer.cpp.o CMakeFiles/crack.dir/src/FilePatcher.cpp.o
-  FLAGS = -g
-  LINK_FLAGS = -ggdb3 -O0 -Wall -Wextra -Weffc++ -Waggressive-loop-optimizations -Wc++14-compat -Wmissing-declarations -Wcast-align -Wcast-qual -Wchar-subscripts -Wconditionally-supported -Wconversion -Wctor-dtor-privacy -Wempty-body -Wfloat-equal -Wno-format-nonliteral -Wformat-security -Wformat-signedness -Wformat=2 -Winline -Wlogical-op -Wnon-virtual-dtor -Wopenmp-simd -Woverloaded-virtual -Wpacked -Wpointer-arith -Winit-self -Wredundant-decls -Wshadow -Wsign-conversion -Wsign-promo -Wstrict-null-sentinel -Wstrict-overflow=2 -Wsuggest-attribute=noreturn -Wsuggest-final-methods -Wsuggest-final-types -Wsuggest-override -Wno-switch-enum -Wsync-nand -Wundef -Wunreachable-code -Wunused -Wuseless-cast -Wvariadic-macros -Wno-literal-suffix -Wno-missing-field-initializers -Wno-narrowing -Wno-old-style-cast -Wno-varargs -Wno-unused-parameter -Wstack-protector -fcheck-new -fsized-deallocation -fstack-protector -fstrict-overflow -fPIC -fno-omit-frame-pointer -pie -fPIE -Werror=vla -Wno-write-strings -fsanitize=address,bool,bounds,enum,float-cast-overflow,float-divide-by-zero,integer-divide-by-zero,leak,nonnull-attribute,null,object-size,return,returns-nonnull-attribute,shift,signed-integer-overflow,undefined,unreachable,vla-bound,vptr
+build bin/crack: CXX_EXECUTABLE_LINKER__crack_Release CMakeFiles/crack.dir/main.cpp.o CMakeFiles/crack.dir/src/WindowDrawer.cpp.o CMakeFiles/crack.dir/src/FilePatcher.cpp.o
+  FLAGS = -O3 -DNDEBUG
+  LINK_FLAGS = -O3 -Wconversion -Wno-narrowing -std=c++17 -DNDEBUG
   LINK_LIBRARIES = -lgtk-3  -lgdk-3  -lz  -lpangocairo-1.0  -lpango-1.0  -lharfbuzz  -latk-1.0  -lcairo-gobject  -lcairo  -lgdk_pixbuf-2.0  -lgio-2.0  -lgobject-2.0  -lglib-2.0
   OBJECT_DIR = CMakeFiles/crack.dir
   POST_BUILD = :

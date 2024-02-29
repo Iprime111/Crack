@@ -1,9 +1,11 @@
 # ninja log v5
-2	623	1709231364018096179	CMakeFiles/crack.dir/src/FilePatcher.cpp.o	23d28e1fb34f7994
-357	462	1709224245750148128	bin/crack	cee9d3c54f097f64
-3	115	1709231380875723734	build.ninja	4b8ce4e1d71359cb
-4	347	1709224245636811771	CMakeFiles/crack.dir/src/WindowDrawer.cpp.o	f9c59bb0b8085664
-1	668	1709231364019096098	CMakeFiles/crack.dir/main.cpp.o	29564ff6d3113698
-3	151	1709231380875723734	build.ninja	4b8ce4e1d71359cb
-2	374	1709231381250692951	CMakeFiles/crack.dir/main.cpp.o	cb79eb385c9f3d3a
-2	385	1709231381253692704	CMakeFiles/crack.dir/src/FilePatcher.cpp.o	5aaad8398df3f536
+2	317	1709232039997415381	CMakeFiles/crack.dir/src/FilePatcher.cpp.o	c9cd753546c0969a
+320	406	1709232086223624085	bin/crack	b68d2a24d735d04d
+1	19	1709232101855340656	build.ninja	4b8ce4e1d71359cb
+1	311	1709232086128631883	CMakeFiles/crack.dir/src/WindowDrawer.cpp.o	eca2923dbd1a0368
+1	292	1709232086109633442	CMakeFiles/crack.dir/main.cpp.o	3a640237121c2ef5
+1	18	1709232101855340656	build.ninja	4b8ce4e1d71359cb
+2	262	1709232102119318977	CMakeFiles/crack.dir/main.cpp.o	23d9b244f7952ce7
+2	265	1709232102122318731	CMakeFiles/crack.dir/src/FilePatcher.cpp.o	a99b63085d7b9130
+2	292	1709232102148316596	CMakeFiles/crack.dir/src/WindowDrawer.cpp.o	fd2c3fb41d4c8ea
+292	375	1709232102231309780	bin/crack	d1cdb5b31c7f621b
