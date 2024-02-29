@@ -27,6 +27,29 @@ void ActivateApplication (GtkApplication *crackerApp, gpointer userData) {
     CreateWindow (crackerApp, "../ui/MainWindow.ui");
 }
 
+static void SignalEnd (GObject *object)
+{
+    g_object_unref (object);
+}
+
+static void PlaySound ()
+{
+  char *path;
+  GtkMediaStream *stream;
+
+  path = g_build_filename ("tests", name, NULL);
+
+  stream = gtk_media_file_new_for_filename (path);
+  gtk_media_stream_set_volume (stream, 1.0);
+
+  gtk_media_stream_play (stream);
+
+  g_signal_connect (stream, "notify::ended", G_CALLBACK (ended), NULL);
+
+  g_free (path);
+}
+
+
 static void SetComFile (GtkFileChooser *fileChooser, gpointer userData) {
     assert (fileChooser);
 
